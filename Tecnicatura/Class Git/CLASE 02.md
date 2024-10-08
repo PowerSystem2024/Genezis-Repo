@@ -1,4 +1,4 @@
-CLASE 02
+CLASE 02 DE GITHUB
 
 Vamos a cargar la llave SSH publica en GitHub
 
