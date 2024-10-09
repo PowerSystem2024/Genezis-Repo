@@ -80,3 +80,232 @@ Tildar en repo y luego click en el botón verde Generate token
 
 -------------------------------------------------------------------------------
 **CLASE DOS DE GITHUB**
+
+Vamos a cargar la llave SSH publica en GitHub
+
+Para copiar la llave publica debes ir al archivo .ssh y allí encontrarás el archivo .pub lo podes abrir con el txt, luego copiar el contenido que esta dentro.
+
+copiar la llave publica #Ir a GitHub, vamos a setting, vamos a SSH y GPG keys
+
+crear una nueva #New SSH key poner nombre y pegar la ssh publica, con esto esta lista.
+
+Aconsejo que la ssh tiene el nombre del ordenador en el que estas trabajando. Esto se debe hacer con cada pc nueva o dispositivo nuevo que tenemos para acceder a nuestra cuenta de GitHub.
+
+git branch #Vemos en que rama estamos
+
+git checkout master #Ponernos en la rama master
+
+git branch - M principal #Cambiamos el nombre a la rama master
+
+git remote agregar origen git@github.com: nombreUsuario/class-git.git #Agregamos el repositorio remoto, este es un ejemplo
+
+git remoto -v #Vemos si ya esta conectado
+
+git merge segunda #Mergeamos lo que tenemos en la rama segunda en main
+
+git commit -am "Uso de GitHub parte 20" #Hacemos el commit de hoy
+
+git push origin principal #Pasamos todo lo hecho a GitHub, revisar en el repositorio en GitHub.
+
+Frente al cambio de nombre de rama master a main, suele suceder que en el repo de GitHub se hayan creado dos ramas, la rama master y la rama main, se debe ir al repo, settings y ahí se puede cambiar la rama principal, en vez de que sigue siendo master, que sea la rama main, juego de eso ya podemos borrar la rama master.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+**CLASE TRES DE GITHUB**
+
+Cambios en GitHub: de master a main
+
+El escritor Argentino Julio Cortázar afirma que las palabras tienen color y peso. Por otro lado, los sinónimos existen por definición, pero no expresan lo mismo. Feo no es lo mismo que desagradable, ni aromático es lo mismo que oloroso.
+
+
+Por lo anterior, podemos afirmar que los sinónimos no expresan lo mismo, no tienen el mismo “color” ni el mismo “peso”.
+
+Sí, esta lectura es parte de la enseñanza profesional de Git & GitHub.
+
+Desde el 1 de octubre de 2020 GitHub cambió el nombre de la rama principal: ya no es “master” -como aprenderás aquí- sino main.
+
+Este derivado de una profunda reflexión ocasionada por el movimiento #BlackLivesMatter.
+
+La industria de la tecnología lleva muchos años usando términos como master, slave, blacklist o whitelist y esperamos pronto puedan ir desapareciendo.
+
+Y sí, las palabras importan.
+
+Por lo que de aquí en adelante cada vez que me escuches mencionar “master” debes saber que hago referencia a “main”.
+
+¿Cuando es que sigue siendo master y cuando sigue siendo main?
+Cuando se crea un repositorio desde git bash en nuestro ordenador a través de git init, sigue siendo el estandar como master. ¿Qué hacer con esto? Debes cambiar el nombre de la rama master a main con el comando git branch -M main.
+Ahora cuando creamos un repositorio desde la nube, osea desde GitHub, ya verás que la rama principal tiene por default el nombre de main y al clonar a nuestro ordenador seguira teniendo este nombre y no será necesario ningun cambio.
+
+---------------------------------------------------------------------------------------------------------------------
+
+**CLASE CUATRO DE GITHUB**
+
+Tu primer push
+La creación de las SSH es necesario solo una vez por cada computadora. Aquí conocerás cómo conectar a GitHub usando SSH.
+
+
+Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
+
+Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.
+
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+
+ssh
+
+git remote set-url origin url-ssh-del-repositorio-en-github
+
+Comandos para copiar la llave SSH:
+
+ESTAS SON LAS RUTAS DEL SSH PUBLICO
+-Mac:
+pbcopy < ~/.ssh/id_rsa.pub
+
+Windows (Git Bash):
+
+clip < ~/.ssh/id_rsa.pub
+
+Linux (Ubuntu):
+
+cat ~/.ssh/id_rsa.pub
+
+
+
+Importante
+
+
+Las buenas costumbres nos enseñan que antes de hacer un push, siempre debemos hacer un pull, un fetch, esto para que si alguien ya hizo algún cambio, no se genere un conflicto.
+
+Invitar a un colaborador
+
+Para invitar a un colaborador debemos ir a GitHub y seleccionar:
+setting -> colaborators -> ingresar contraseña o un F2A de verificación y enviar la invitación escribiendo el nombre de usuario.
+
+
+Del otro lado el usuario invitado solo debe aceptar y listo, ya puede participar del proyecto haciendo commit.
+
+------------------------------------------------------------------------------------------------------------------------
+
+**CLASE CINCO DE GITHUB**
+
+Git tag y versiones en GitHub
+
+En Git, las etiquetas o Git tags tienen un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando git tag, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas, es esencial para un flujo de trabajo eficiente.
+
+
+Creación de etiquetas en Git
+
+```sh
+git tag
+
+```
+
+
+Sustituye con un identificador semántico que refleje el estado del repositorio en el momento de la creación. Git admite etiquetas anotadas y ligeras.
+
+
+Listado de etiquetas
+Para obtener una lista de etiquetas en el repositorio, ejecuta el siguiente comando:
+
+
+
+Para crear una etiqueta, ejecuta el siguiente comando:
+
+![tagging (1)-12fce53a-7a10-4eab-9b45-c37111d925f8](https://github.com/user-attachments/assets/e9a8f3b2-ff7c-47a4-9e50-dbaab09c110e)
+
+
+Las etiquetas anotadas almacenan información adicional como la fecha, etiquetador y correo electrónico, y son ideales para publicaciones públicas. Las etiquetas ligeras son más simples y se emplean como “marcadores” de una confirmación específica.
+
+
+git tag
+
+Esto mostrará una lista de las etiquetas existentes, como:
+
+v1.0
+
+v1.1
+
+v1.2
+
+Para perfeccionar la lista, puedes utilizar opciones adicionales, como -l con una expresión comodín.
+
+
+Uso compartido de etiquetas
+
+Compartir etiquetas requiere un enfoque explícito al usar el comando git push. Por defecto, las etiquetas no se envían automáticamente. Para enviar etiquetas específicas, utiliza:
+
+git push origin
+
+Para enviar varias etiquetas a la vez, usa:
+
+git push origin --tags
+
+
+Eliminación de etiquetas
+Para eliminar una etiqueta, usa el siguiente comando:
+
+git tag -d
+
+Esto eliminará la etiqueta identificada por en el repositorio local.
+
+En resumen, las etiquetas en Git son esenciales para asignar versiones y capturar instantáneas importantes en el historial de un proyecto. Aprender a crear, listar, compartir y eliminar etiquetas mejorará tu flujo de trabajo con Git.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+**CLASE SEIS DE GITHUB**
+
+Error con los tags
+Investigación: ¿Qué pasa si por error cargamos un tag dos veces?
+
+¿Cómo solucionarías este problema o error?
+
+La respuesta debe ser enviada antes de las 23 horas por cada grupo, deben enviar comandos y todo los pasos que harían frente a este conflicto.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+**CLASE SIETE DE GITHUB**
+
+Error con los tags
+Investigación: Si un tag es imposible generarlo dos veces ¿Cómo es que existe el error de dos tags con el mismo nombre?
+
+¿Cómo se origina este problema o error?
+
+La respuesta debe ser enviada antes de las 23 horas por cada grupo, deben enviar comandos y todo los pasos que harían frente a este conflicto.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+**CLASE OCHO DE GITHUB**
+
+Manejo de ramas en GitHub
+
+Si no te funciona el comando gitk es posible no lo tengas instalado por defecto.
+Para instalar gitk debemos ejecutar los siguientes comandos:
+
+
+
+```sh
+
+  sudo apt-get update
+
+
+  sudo apt-get install gitk
+
+```
+
+Repasa: ¿Qué es Git?
+
+Las ramas nos permiten hacer cambios a nuestros archivos sin modificar la versión principal (main). Puedes trabajar con ramas que nunca envías a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo crucial es que aprendas a manejarlas para trabajar profesionalmente.
+
+Si, estando en otra rama, modificamos los archivos y hacemos commit, tanto el historial(git log) como los archivos serán afectados. La ventaja que tiene usar ramas es que las modificaciones solo afectarán a esa rama en particular. Si luego de “guardar” los archivos(usando commit) nos movemos a otra rama (git checkout otraRama) veremos como las modificaciones de la rama pasada no aparecen en la otraRama.
+
+Comandos para manejo de ramas en GitHub
+Crear una rama:
+
+
+```sh
+git branch branchName #Crear una rama
+git checkout branchName #Movernos a otra rama 
+git checkout -b nombre-de-la-rama #Crear una rama en el repositorio local
+git push origin nombre-de-la-rama #Publicar una rama local al repositorio remoto
+```
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git utilizando el comando gitk. Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.
