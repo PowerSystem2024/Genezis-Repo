@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ac6b85f-6df6-492b-addc-567bcb2e4cfd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Ciclos06/Ciclos06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Ciclos06/Ciclos06JO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Ciclos07/Ciclos07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Ciclos07/Ciclos07JO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Clases/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Clases/PruebaPersona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 4/clases/untitled.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/Leccion2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/src/EjercicioCiclos08/Ciclo08JO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/src/EjercicioCiclos08/Ciclos08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/src/EjercicioCiclos09/Ciclos09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/src/EjercicioCiclos09/Ciclos09JO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CLASE 5/Leccion2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CLASE 3/Ciclos05/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CLASE 3/Ciclos05/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CLASE 3/EjercicioCiclos04/src/Ciclos04/Ciclos04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CLASE 3/EjercicioCiclos04/src/Ciclos04/Ciclos04.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2nhvTKAmMn6FfmTzdyYsmhrX6Lz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/LB/UNI/GITHUB/Java/SEGUNDO TRIMESTRE/CLASE 6/PasoPorValor",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ac6b85f-6df6-492b-addc-567bcb2e4cfd" name="Changes" comment="" />
+      <created>1729438128154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729438128154</updated>
+      <workItem from="1729438129198" duration="214000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,10 +1,22 @@
-
 package operaciones;
 
 public class Aritmetica {
     //Atributos de la clase
     int a;
     int b;
+
+    //El constructor es un metodo especial
+    public Aritmetica(){
+        System.out.println("Se esta ejecutando este constructor");
+    }
+    //Estamos viendo lo que se llama sobrecarga de constructores
+
+    public Aritmetica(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Se esta ejecutando este constructor número dos");
+
+    }
 
     //Metodo
     public void sumarNumeros() {
