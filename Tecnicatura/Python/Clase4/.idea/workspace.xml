@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b23f66c-7fb9-4519-acae-1594df19a471" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/4.6-Ejercicio1-LlenarUnaLista.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.7-Ejercicio2-ModificarElementosDeLista.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ejercicio3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EjercicioRaizCuadrada.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RecorrerDiccionario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Clase4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicio9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -37,21 +37,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.4.6-Ejercicio1-LlenarUnaLista.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.7-Ejercicio2-ModificarElementosDeLista.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Ejercicio1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Ejercicio3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.EjercicioRaizCuadrada.executor&quot;: &quot;Run&quot;,
-    &quot;Python.RecorrerDiccionario.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;python&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.4.6-Ejercicio1-LlenarUnaLista.executor": "Run",
+    "Python.4.7-Ejercicio2-ModificarElementosDeLista.executor": "Run",
+    "Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos.executor": "Run",
+    "Python.Ejercicio1.executor": "Run",
+    "Python.Ejercicio3.executor": "Run",
+    "Python.Ejercicio4.executor": "Run",
+    "Python.Ejercicio5.executor": "Run",
+    "Python.Ejercicio6.executor": "Run",
+    "Python.Ejercicio7.executor": "Run",
+    "Python.Ejercicio8.executor": "Run",
+    "Python.Ejercicio9.executor": "Run",
+    "Python.EjercicioRaizCuadrada.executor": "Run",
+    "Python.RecorrerDiccionario.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/paler/OneDrive/Escritorio/Python Remoto/Genezis-Repo/Tecnicatura/Python/Clase4",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
-  <component name="RunManager" selected="Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos">
-    <configuration name="4.6-Ejercicio1-LlenarUnaLista" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python.Ejercicio9">
+    <configuration name="Ejercicio5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clase4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -64,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.6-Ejercicio1-LlenarUnaLista.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejercicio5.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -73,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4.7-Ejercicio2-ModificarElementosDeLista" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Ejercicio6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clase4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.7-Ejercicio2-ModificarElementosDeLista.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejercicio6.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,7 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4.8-Ejercicio3-InsertarElementosYOrdenarlos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Ejercicio7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clase4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,7 +117,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejercicio7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -117,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="EjercicioRaizCuadrada" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Ejercicio8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clase4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EjercicioRaizCuadrada.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejercicio8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +148,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RecorrerDiccionario" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Ejercicio9" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Clase4" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,7 +161,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RecorrerDiccionario.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ejercicio9.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos" />
-        <item itemvalue="Python.4.7-Ejercicio2-ModificarElementosDeLista" />
-        <item itemvalue="Python.EjercicioRaizCuadrada" />
-        <item itemvalue="Python.4.6-Ejercicio1-LlenarUnaLista" />
-        <item itemvalue="Python.RecorrerDiccionario" />
+        <item itemvalue="Python.Ejercicio9" />
+        <item itemvalue="Python.Ejercicio8" />
+        <item itemvalue="Python.Ejercicio7" />
+        <item itemvalue="Python.Ejercicio6" />
+        <item itemvalue="Python.Ejercicio5" />
       </list>
     </recent_temporary>
   </component>
