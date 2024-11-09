@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-import icono1 from '/src/assets/hammer-and-wrench-svgrepo-com.svg';
-import icono2 from '/src/assets/medal-svgrepo-com.svg';
-import icono3 from '/src/assets/play-game-svgrepo-com.svg';
-import icono4 from '/src/assets/pc-svgrepo-com.svg';
-import icono5 from '/src/assets/pc-svgrepo-com.svg';
+import icono1 from '/src/assets/node.svg';
+import icono2 from '/src/assets/sql.svg';
+import icono3 from '/src/assets/aplicacion.svg';
+import icono4 from '/src/assets/e-commerce.svg';
+import icono5 from '/src/assets/full_stack.svg';
 
 const titulo = "Experiencia Grupal - Estudiantes de la Tecnicatura en Programación - UTN";
 const fecha = "Desde 2022 - Actualmente";
