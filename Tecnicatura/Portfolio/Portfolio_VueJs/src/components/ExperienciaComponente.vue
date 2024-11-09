@@ -53,8 +53,8 @@ const experiencias = ref([
     <p class="fecha">{{ fecha }}</p>
     <ul class="listado">
       <li class="item" v-for="experiencia in experiencias" :key="experiencia.id">
-        <img class="imagen" :src="experiencia.src" width="45rem" :alt="experiencia.title" />
-        <div>
+        <img class="imagen" :src="experiencia.src" width="50rem" :alt="experiencia.title" />
+        <div class="contenido">
           <h4>{{ experiencia.title }}</h4>
           <p>{{ experiencia.descripcion }}</p>
         </div>
@@ -72,45 +72,58 @@ const experiencias = ref([
   border-radius: 15px;
   background-color: rgb(28, 41, 52);
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
   font-size: 2rem;
   text-align: center;
+  font-weight: bold;
+  color: #ffcc00;
 }
 
 .fecha {
   font-size: 1.5rem;
   text-align: center;
+  color: #aaa;
+  margin-bottom: 2rem;
 }
 
 .listado {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-  padding: 0;
+  gap: 1.5rem;
 }
 
 .item {
   display: flex;
   align-items: flex-start;
-  padding: 1rem;
+  padding: 1.5rem;
   gap: 1.5rem;
   width: 100%;
   background-color: #2d3e50;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  transition: background-color 0.3s;
+}
+
+.item:hover {
+  background-color: #3e4a5d;
 }
 
 .imagen {
-  border-radius: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.contenido {
+  flex: 1;
 }
 
 .item h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0;
   color: #fff;
 }
@@ -118,5 +131,6 @@ const experiencias = ref([
 .item p {
   margin: 0.5rem 0 0;
   color: #c0c0c0;
+  font-size: 1rem;
 }
 </style>

@@ -1,32 +1,31 @@
 <script setup>
 import { ref } from 'vue';
-const fechaColor = ref([]);
-fechaColor.value = [
-    {color: '#41516c'},
-    {color: '#FBCA3E'},
-    {color: '#E24A68'},
-    {color: '#1B5FBC'},
-    {color: '#4CADAD'}
-];
-const educacion = ref([]);
-educacion.value = [
-{ fecha: '2025', title: 'Finalización de la Tecnicatura Universitaria en Programación', descripcion: 'Graduación de los estudiantes en la Tecnicatura Universitaria en Programación - UTN' },
-        { fecha: '2024', title: 'Último año de la Tecnicatura Universitaria en Programación', descripcion: 'Estudiantes cursando el último año de la Tecnicatura Universitaria en Programación - UTN FRSR' },
-        { fecha: '2023', title: 'Incorporación de nuevas tecnologías y metodologías', descripcion: 'Introducción a tecnologías como Vue.js, Node.js y metodologías ágiles en la currícula' },
-        { fecha: '2022', title: 'Participación en proyectos colaborativos', descripcion: 'Desarrollo de proyectos en equipo para fortalecer habilidades de programación y trabajo en grupo' },
-        { fecha: '2021', title: 'Inicio de la Tecnicatura Universitaria en Programación', descripcion: 'Inicio de la carrera en la Universidad Tecnológica Nacional, Facultad Regional San Rafael' }
-];
+
+const fechaColor = ref([
+  { color: '#41516c' },
+  { color: '#FBCA3E' },
+  { color: '#E24A68' },
+  { color: '#1B5FBC' },
+  { color: '#4CADAD' }
+]);
+
+const educacion = ref([
+  { fecha: '2025', title: 'Finalización de la Tecnicatura Universitaria en Programación', descripcion: 'Graduación de los estudiantes en la Tecnicatura Universitaria en Programación - UTN' },
+  { fecha: '2024', title: 'Último año de la Tecnicatura Universitaria en Programación', descripcion: 'Estudiantes cursando el último año de la Tecnicatura Universitaria en Programación - UTN FRSR' },
+  { fecha: '2023', title: 'Incorporación de nuevas tecnologías y metodologías', descripcion: 'Introducción a tecnologías como Vue.js, Node.js y metodologías ágiles en la currícula' },
+  { fecha: '2022', title: 'Participación en proyectos colaborativos', descripcion: 'Desarrollo de proyectos en equipo para fortalecer habilidades de programación y trabajo en grupo' },
+  { fecha: '2021', title: 'Inicio de la Tecnicatura Universitaria en Programación', descripcion: 'Inicio de la carrera en la Universidad Tecnológica Nacional, Facultad Regional San Rafael' }
+]);
 </script>
 
-
 <template>
-    <ul>
-        <li v-for="(item, index) in educacion" :key="index" :style="{ '--fecha-color': fechaColor[index].color}">
-        <div class="fecha">{{ item.fecha }}</div>
-        <h3 class="title">{{ item.title }}</h3>
-        <div class="descripcion">{{ item.descripcion }}</div>
+  <ul>
+    <li v-for="(item, index) in educacion" :key="index" :style="{ '--fecha-color': fechaColor[index].color }">
+      <div class="fecha">{{ item.fecha }}</div>
+      <h3 class="title">{{ item.title }}</h3>
+      <div class="descripcion">{{ item.descripcion }}</div>
     </li>
-    </ul>
+  </ul>
 </template>
 
 <style scoped>
@@ -53,10 +52,6 @@ body {
   background: var(--bgColor);
 }
 
-h1 {
-  text-align: center;
-}
-
 ul {
   --col-gap: 2rem;
   --row-gap: 2rem;
@@ -81,7 +76,6 @@ ul::before {
 
 /* columns*/
 
-/* row gaps */
 ul li:not(:last-child) {
   margin-bottom: var(--row-gap);
 }
@@ -121,7 +115,6 @@ ul li .fecha::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
   position: absolute;
   top: 100%;
-
   clip-path: polygon(0 0, 100% 0, 0 100%);
   right: 0;
 }
@@ -136,27 +129,30 @@ ul li .fecha::after {
   border: 0.3rem solid var(--fecha-color);
   border-radius: 50%;
   top: 50%;
-
   transform: translate(50%, -50%);
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 
-/* title descr */
+/* title & description */
 ul li .title,
 ul li .descripcion {
   background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
 }
+
 ul li .title {
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
   font-weight: 500;
+  font-size: 1.2rem;
 }
+
 ul li .descripcion {
   padding-block-end: 1.5rem;
   font-weight: 300;
+  font-size: 1rem;
 }
 
 /* shadows */
@@ -172,6 +168,7 @@ ul li .descripcion::before {
   filter: blur(4px);
   transform: translate(-50%, 50%);
 }
+
 ul li .title::before {
   bottom: calc(100% + 0.125rem);
 }
@@ -209,18 +206,9 @@ ul li .descripcion::before {
     transform: translate(-50%, -50%);
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
+
   ul li:nth-child(odd) .fecha {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
 }
-
-.credits {
-  margin-top: 1rem;
-  text-align: right;
-}
-.credits a {
-  color: var(--color);
-}
 </style>
-
-

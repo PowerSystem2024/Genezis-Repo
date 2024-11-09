@@ -1,30 +1,108 @@
 @import './base.css';
 
-/*Este estilo lo dejamos*/
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* main.css */
+
+/* Fondo general y fuente */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-a{
-  text-decoration: none;
-  color: var(--vt-c-white);
+/* Navbar oscuro */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f; /* Fondo más oscuro para contraste */
+  padding: 10px 20px;
 }
 
-@media (max-width: 768px) {
-  #app {
-    display: flex;
-    flex-direction: column;
-    font-size: small;
-  }
+.navbar a {
+  color: #80cbc4; /* Tonos de verde suave */
+  font-size: 16px;
+  padding: 10px 20px;
 }
 
-@media (min-width: 1024px) {
-  #app {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
+.navbar a:hover {
+  color: #4dd0e1; /* Efecto hover en azul claro */
+  border-radius: 4px;
+}
+
+/* Títulos y componentes */
+.component-title {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.education-item, .experience-item, .interest-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3, .experience-item h3, .interest-item h3 {
+  font-size: 1.5rem;
+  color: #81d4fa; /* Tono azul claro */
+}
+
+.education-item p, .experience-item p, .interest-item p {
+  font-size: 1.1rem;
+  color: #b0bec5; /* Texto en gris suave */
+  margin-top: 10px;
+}
+
+/* Sección de educación */
+.education-section {
+  padding: 60px 0;
+  background-color: #121212;
+}
+
+.education-item {
+  background-color: #1e1e1e;
+  border-left: 4px solid #80cbc4; /* Verde claro */
+}
+
+/* Sección de experiencia */
+.experience-section {
+  padding: 60px 0;
+  background-color: #121212;
+}
+
+.experience-item {
+  background-color: #1e1e1e;
+  border-left: 4px solid #ffab91; /* Naranja claro */
+}
+
+/* Sección de intereses */
+.interests-section {
+  padding: 60px 0;
+  background-color: #121212;
+}
+
+.interest-item {
+  background-color: #1e1e1e;
+  border-left: 4px solid #ba68c8; /* Púrpura suave */
+}
+
+/* Footer oscuro */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #80cbc4;
+}
+
+footer a:hover {
+  color: #4dd0e1;
 }

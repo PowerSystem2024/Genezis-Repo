@@ -1,103 +1,105 @@
 <script setup>
-import proyecto1 from '/src/assets/Fotoportafolio.jpg'
-import proyecto2 from '/src/assets/gg.jpg'
 import { ref } from 'vue';
-var misProyectos = ref([]);
-misProyectos.value = ([
+
+import proyecto1 from '/src/assets/proyecto1.jpeg';
+import proyecto2 from '/src/assets/proyecto2.jpeg';
+import proyecto3 from '/src/assets/proyecto3.jpeg';
+
+const proyectos = ref([
     {
         id: 1,
         src: proyecto1,
-        titulo: "Genezis Portfolio",
-        descripcion: "Desarrollo colaborativo de un portafolio web grupal, integrando Vue.js para presentar proyectos individuales y colectivos de estudiantes de programación.",
-        proyectoLink: "https://proyecto.genezis/portfolio",
-        githubLink: "https://github.com/GenezisTeam/Portfolio"
+        titulo: "Sistema de Gestión de Estudiantes",
+        descripcion: "Aplicación web en Java y Spring Boot creada para gestionar estudiantes, cursos y sus calificaciones académicas.",
+        ano: "(2023)",
+        proyectoLink: "https://www.example.com",
+        githubLink: "https://github.com/usuario/sistema-gestion-estudiantes"
     },
     {
         id: 2,
         src: proyecto2,
-        titulo: "Sistema de Gestión de Recursos Académicos",
-        descripcion: "Proyecto en equipo para crear una plataforma de gestión de recursos académicos, facilitando la organización de materiales y eventos estudiantiles.",
-        proyectoLink: "https://proyecto.genezis/gestion-academica",
-        githubLink: "https://github.com/GenezisTeam/RecursosAcademicos"
+        titulo: "Aplicación de E-commerce",
+        descripcion: "Proyecto de e-commerce desarrollado con React y Node.js, que permite la compra de materiales de estudio y libros técnicos.",
+        ano: "(2022)",
+        proyectoLink: "https://www.example.com",
+        githubLink: "https://github.com/usuario/ecommerce-educativo"
+    },
+    {
+        id: 3,
+        src: proyecto3,
+        titulo: "Plataforma de Foros para Programadores",
+        descripcion: "Foro en línea con PHP y MySQL para estudiantes de programación, con funcionalidades de creación de temas, respuestas y moderación.",
+        ano: "(2022)",
+        proyectoLink: "https://www.example.com",
+        githubLink: "https://github.com/usuario/foro-programacion"
     },
 ]);
-
 </script>
 
 <template>
     <div class="galeria">
-        
-        <li class="proyecto" v-for="proyecto in misProyectos" :key="proyecto.id">
-            <img :src="proyecto.src" :alt="proyecto.titulo">
-            <div class="Proyecto-info">
-                <h3>{{ proyecto.titulo }}</h3>
-                <p> {{ proyecto.descripcion }}</p>
-                <div class="proyecto-links">
-                    <a :href="proyecto.proyectoLink" class="btn-ver-mas" target="_blank" rel="noopener noreferrer">Ver 
-                        Proyecto</a>
-                    <a :href="proyecto.githubLink" class="github-link" target="_blank" 
-                        rel="noopener noreferrer">Ver Código en Github</a>
+        <ul>
+            <li class="proyecto" v-for="proyecto in proyectos" :key="proyecto.id">
+                <img :src="proyecto.src" :alt="proyecto.titulo" />
+                <div class="proyecto-info">
+                    <h3>{{ proyecto.titulo }} <span>{{ proyecto.ano }}</span></h3>
+                    <p>{{ proyecto.descripcion }}</p>
+                    <div class="proyecto-links">
+                         <a :href="proyecto.githubLink" target="_blank" rel="noopener noreferrer" class="btn-ver-mas">Ver en GitHub</a>
+                    </div>
                 </div>
-            </div>
-        </li>
+            </li>
+        </ul>
     </div>
 </template>
 
 <style scoped>
-/* .galeria {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    background-image: url('/src/assets/Kerfin7-NEA-2262.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
-
 .galeria {
     display: flex;
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
     padding: 20px;
-    background: linear-gradient(-45deg, #947e7e, #023186, #c20f02, #06e911);
+    background: linear-gradient(-45deg, #1a1a1a, #2b2b2b, #3c3c3c, #4f4f4f);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 12s ease infinite;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.galeria ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .proyecto {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    border: 2px solid #31aa12;
+    align-items: center;
+    width: 280px;
+    border: 1px solid #444;
     border-radius: 8px;
     overflow: hidden;
-    background-color: #0a0a0a;
-    max-width: 222px;
-    flex: 1 1 300px;
+    background-color: #333;
+    color: #eee;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
 }
 
 .proyecto img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .proyecto-info {
@@ -106,21 +108,36 @@ misProyectos.value = ([
 }
 
 .proyecto-info h3 {
-    margin: 10px 0; 
-    font-size: 1.3em;
-    color: #e6dfdf;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ffcc00;
 }
 
 .proyecto-info p {
-    margin: 10px 0; 
-    font-size: 1em;
-    color: #cc1f1f;
+    font-size: 0.95em;
+    color: #bbb;
 }
 
 .proyecto-links {
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-ver-mas {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
 }
 </style>
+
