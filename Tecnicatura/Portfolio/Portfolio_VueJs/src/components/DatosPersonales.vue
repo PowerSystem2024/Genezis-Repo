@@ -13,10 +13,10 @@ const presentacion = 'Somos un grupo de estudiantes de la Tecnicatura en Program
 
 // Redes sociales del grupo
 const redesSociales = [
-    { id: 1, name: 'linkedin', src: linkedin, url: 'https://www.linkedin.com/in/gabriel-garino-116337329/' },
-    { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/gabi_garino_/' },
-    { id: 3, name: 'github', src: github, url: 'https://github.com/Gabrielgettoo10' },
-    { id: 4, name: 'curriculum', src: cv, url: '' }
+    { id: 1, name: 'linkedin', src: linkedin, url: 'https://ar.linkedin.com/' },
+    { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/genezis.devs/profilecard/?igsh=MWJpcXdhd3cwYzZicA==' },
+    { id: 3, name: 'github', src: github, url: 'https://github.com/PowerSystem2024/Genezis-Repo' },
+    { id: 4, name: 'curriculum', src: cv, url: 'https://docs.google.com/document/d/1I0a7ogY0l8VxtuwC7SkhSA2YGXiYp6sFwVLine3gFHM/edit?usp=sharing' }
 ];
 </script>
 
