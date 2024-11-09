@@ -42,12 +42,12 @@ const redesSociales = [
 <style scoped>
 h1 {
     font-size: 2.5rem;
-    color: #81d4fa;
+    color: #dadfe2;
 }
 
 h2 {
     font-size: 1.5rem;
-    color: #80cbc4;
+    color: #eaf0ef;
 }
 
 p {
@@ -85,7 +85,7 @@ p {
 }
 
 .icon-redsocial {
-    background-color: #e0e0e0;
+    background-color: #030303;
     border-radius: 50%;
     padding: 8px;
     margin: 0 10px;
@@ -94,7 +94,7 @@ p {
 }
 
 .icon-redsocial:hover {
-    background-color: rgb(28, 41, 52);
+    background-color: rgb(196, 220, 240);
     box-shadow: 0 0 5px rgba(251, 249, 249, 0.9);
 }
 
