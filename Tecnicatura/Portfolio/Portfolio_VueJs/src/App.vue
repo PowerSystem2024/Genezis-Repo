@@ -47,7 +47,7 @@ import InteresesComponente from './components/InteresesComponente.vue';
   </main>
   <footer>
     <a href="#top">Inicio</a>
-    <p>© 2024 Gabriel Garino - Portafolio web - UTN FRSR</p>
+    <p>© 2024 Genezis - Portafolio Grupal de Estudiantes - UTN FRSR</p>
   </footer>
 </template>
 

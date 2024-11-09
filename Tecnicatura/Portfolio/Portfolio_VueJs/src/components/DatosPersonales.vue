@@ -4,17 +4,17 @@ import instagram from '/src/assets/instagram_icon.svg';
 import github from '/src/assets/github_icon.svg';
 import cv from '/src/assets/cv_resume_icon.svg';
 
-const title = 'Gabriel Garino';
-const descripcion = 'Técnico Universitario en Programación - UTN';
+const title = 'Genezis';
+const descripcion = 'Estudiantes de la Tecnicatura en Programación - UTN';
 const residencia = 'San Rafael, Mendoza, Argentina';
-const presentacion = 'Hola, Bienvenido a mi portafolio de proyectos. Soy desarrollador, técnico en electrónica y mantenimiento , se editar videos y me gusta programar videojuegos';
+const presentacion = 'Somos un grupo de estudiantes de la Tecnicatura en Programación en UTN, unidos por nuestra pasión por el desarrollo y la tecnología.';
 const redesSociales = [
     { id: 1, name: 'linkedin', src: linkedin, url: 'https://www.linkedin.com/in/gabriel-garino-116337329/' },
     { id: 2, name: 'Instagram', src: instagram, url: 'https://www.instagram.com/gabi_garino_/' },
     { id: 3, name: 'github', src: github, url: 'https://github.com/Gabrielgettoo10' },
     { id: 4, name: 'curriculum', src: cv, url: '' }
 ];
-const telefono = '+54 9 2604-006526';
+
 </script>
 
 <template>
@@ -28,7 +28,7 @@ const telefono = '+54 9 2604-006526';
                 <a :href="red.url"><img class="icon.redsocial" :src="red.src" width="35rem" :alt="red.name"></a>
             </li>
          </ul>
-            <h3> 📱 Mi Teléfono personal: {{ telefono }}</h3>
+            
             <h4>{{ residencia }}</h4>
         </div>
     </section>

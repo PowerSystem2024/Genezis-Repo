@@ -10,11 +10,11 @@ fechaColor.value = [
 ];
 const educacion = ref([]);
 educacion.value = [
-    {fecha: '2025', title: 'Finalización de Tecnicatura Universitaria en Programación', descripcion: 'Técnico Universitario en Programación - UTN'},
-    {fecha: '2024', title: 'Comienzo de Tecnicatura Universitaria en Programación', descripcion: 'Cursando la carrera de Técnico Universitario en Programación - UTN-FRSR'},
-    {fecha: '2023', title: 'Finalización de Escuela Secundaria', descripcion: 'Me recibí en Ciencias Sociales y Humanidades en la Escuela Secundaria Valentin Bianchi'},
-    {fecha: '2019', title: 'Comienzo de escuela secundaria hasta 3er año', descripcion: 'Empiezo la Escuela Secundaria Ejército de los Andes(ENET), en la que estudié hasta 3er año'},
-    {fecha: '2018', title: 'Finalización de escuela primaria', descripcion: 'Finalizo la Escuela Primaria Santa María del Valle Grande'}
+{ fecha: '2025', title: 'Finalización de la Tecnicatura Universitaria en Programación', descripcion: 'Graduación de los estudiantes en la Tecnicatura Universitaria en Programación - UTN' },
+        { fecha: '2024', title: 'Último año de la Tecnicatura Universitaria en Programación', descripcion: 'Estudiantes cursando el último año de la Tecnicatura Universitaria en Programación - UTN FRSR' },
+        { fecha: '2023', title: 'Incorporación de nuevas tecnologías y metodologías', descripcion: 'Introducción a tecnologías como Vue.js, Node.js y metodologías ágiles en la currícula' },
+        { fecha: '2022', title: 'Participación en proyectos colaborativos', descripcion: 'Desarrollo de proyectos en equipo para fortalecer habilidades de programación y trabajo en grupo' },
+        { fecha: '2021', title: 'Inicio de la Tecnicatura Universitaria en Programación', descripcion: 'Inicio de la carrera en la Universidad Tecnológica Nacional, Facultad Regional San Rafael' }
 ];
 </script>
 
