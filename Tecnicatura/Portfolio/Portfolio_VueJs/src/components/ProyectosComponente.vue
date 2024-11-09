@@ -7,18 +7,18 @@ misProyectos.value = ([
     {
         id: 1,
         src: proyecto1,
-        titulo: "GG Tech",
-        descripcion: "Proyecto de venta de tecnología",
-        proyectoLink: "https://proyecto.gg/",
-        githubLink: "https://github.com/Gabriel/GG-Tech"
+        titulo: "Genezis Portfolio",
+        descripcion: "Desarrollo colaborativo de un portafolio web grupal, integrando Vue.js para presentar proyectos individuales y colectivos de estudiantes de programación.",
+        proyectoLink: "https://proyecto.genezis/portfolio",
+        githubLink: "https://github.com/GenezisTeam/Portfolio"
     },
     {
         id: 2,
         src: proyecto2,
-        titulo: "GG Games",
-        descripcion: "Proyecto para la creación de videojuegos",
-        proyectoLink: "https://proyecto.gg/games",
-        githubLink: "https://github.com/Gabriel/GG-Games"
+        titulo: "Sistema de Gestión de Recursos Académicos",
+        descripcion: "Proyecto en equipo para crear una plataforma de gestión de recursos académicos, facilitando la organización de materiales y eventos estudiantiles.",
+        proyectoLink: "https://proyecto.genezis/gestion-academica",
+        githubLink: "https://github.com/GenezisTeam/RecursosAcademicos"
     },
 ]);
 

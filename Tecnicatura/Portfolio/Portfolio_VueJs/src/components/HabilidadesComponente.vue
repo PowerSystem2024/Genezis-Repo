@@ -8,19 +8,32 @@ import img6 from '/src/components/icons/Italiano.svg'
 import { ref } from 'vue';
 const habilidades = ref([
     {
-        id: 1, nombre: 'Habilidades Técnicas y de Programación:', habilidades: [
-            { id: 1, nombre: 'Programación y Desarrollo', icono: img1, nivel: 'Avanzado' },
-            { id: 2, nombre: 'Mantenimiento y Reparación', icono: img2, nivel: 'Avanzado' },
-            { id: 3, nombre: 'Máquinas Industriales y Electricidad', icono: img3, nivel: 'Avanzado' },
+        id: 1,
+        nombre: 'Habilidades Técnicas y de Programación:',
+        habilidades: [
+          { id: 1, nombre: 'Desarrollo Front-End', icono: img1, nivel: 'Avanzado' },
+          { id: 2, nombre: 'Desarrollo Back-End', icono: img1, nivel: 'Intermedio' },
+          { id: 3, nombre: 'Manejo de Bases de Datos', icono: img2, nivel: 'Intermedio' },
+          { id: 4, nombre: 'Desarrollo de Aplicaciones', icono: img3, nivel: 'Avanzado' }
         ]
-    },
-    {
-        id: 2, nombre: 'Idiomas:', habilidades: [
-            { id: 1, nombre: 'Español', icono: img4, nivel: 'Nativo' },
-            { id: 2, nombre: 'Inglés', icono: img5, nivel: 'Básico' },
-            { id: 3, nombre: 'Italiano', icono: img6, nivel: 'Básico' }
+      },
+      {
+        id: 2,
+        nombre: 'Idiomas:',
+        habilidades: [
+          { id: 1, nombre: 'Español', icono: img4, nivel: 'Nativo' },
+          { id: 2, nombre: 'Inglés', icono: img5, nivel: 'Básico' }
         ]
-    }
+      },
+      {
+        id: 3,
+        nombre: 'Otras Habilidades:',
+        habilidades: [
+          { id: 1, nombre: 'Trabajo en Equipo', icono: img1, nivel: 'Avanzado' },
+          { id: 2, nombre: 'Gestión de Proyectos', icono: img2, nivel: 'Intermedio' },
+          { id: 3, nombre: 'Creatividad y Resolución de Problemas', icono: img3, nivel: 'Avanzado' }
+        ]
+      }
 ]);
 </script>
 <template>
