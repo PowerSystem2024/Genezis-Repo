@@ -1,0 +1,425 @@
+Index: 4.7-Ejercicio2-ModificarElementosDeLista.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/4.7-Ejercicio2-ModificarElementosDeLista.py b/4.7-Ejercicio2-ModificarElementosDeLista.py
+new file mode 100644
+--- /dev/null	(date 1729557190682)
++++ b/4.7-Ejercicio2-ModificarElementosDeLista.py	(date 1729557190682)
+@@ -0,0 +1,20 @@
++#Ejercicio 2: Modificar los elementos de una lista
++#Llenar una lista con los números del 1 al 10, luego modificarlos
++# elementos de la lista multiplicandolos por un valor ingresado por el usuario
++
++listaNumeros = list(range(1,11))
++#Imprimo la lista original:
++print("Lista Original:")
++for i in listaNumeros:
++    print(i, end='-')
++
++numero = int(input("\nIngrese un numero entre 1 y 10"))
++while numero < 1 & numero > 10:
++    numero = int(input("Por favor, ingrese un número entre 1 y 10"))
++
++for indice, i in enumerate(listaNumeros): #funcion para modificar los indices de la lista, ya que el iterador por si mismo solo recorre la lista pero no permite realizar modificaciones
++    listaNumeros[indice] *= numero #el iterador  recorre los indices y realiza la multiplicacion
++#Lista final con los elementos multiplicados:
++print(f"Lista final multiplicada por: {numero}")
++for i in listaNumeros:
++    print(i,end='-')
+Index: 4.8-Ejercicio3-InsertarElementosYOrdenarlos.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py b/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py
+new file mode 100644
+--- /dev/null	(date 1729557252497)
++++ b/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py	(date 1729557252497)
+@@ -0,0 +1,17 @@
++#Ejercicio 3: insertar elementos y ordenarlos
++#Pedir números y meterlos en una lista, cuando el usuario
++#introduzca un número 0, nuestro programa dejaría de insertar.
++#Por último, mostrar los números ordenados de menor a mayor
++
++lista = []
++salir = True #variable bandera
++
++while salir: #mienstras salir = True, se ejecuta el bucle
++    numero = int(input("Ingrese un múmero: "))
++    if numero == 0:
++        salir = False # cuando numero sea 0, salir cambia a False por lo tanto termina el bucle
++    else:
++        lista.append(numero)
++
++lista.sort() #ordena la lista
++print(f'\n Lista ordenada: \n{lista}')
+Index: Ejercicio2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Ejercicio2.py b/Ejercicio2.py
+new file mode 100644
+--- /dev/null	(date 1729552681056)
++++ b/Ejercicio2.py	(date 1729552681056)
+@@ -0,0 +1,27 @@
++#Ejercicio 2: Operaciones de conjuntos con listas
++# escriba un programa que tenga 2 listas y que a continuación
++# cree las siguientes listas (en las que no debe haber repetición)
++# 1 - Lista de palabras que aparecen en las listas
++# 2 - Lista de palabras que aparecen en la primera lista, pero no en la segunda
++# 3 - Lista de palabras que aparecen en la segunda lista, pero no en la primera
++# 4 - Lista de palabras que aparecen en ambas listas
++
++lista1 = [1,2,3,4,5,4,3,2,2,1,5]
++lista2 = [4,5,6,7,8,4,5,6,7,7,8]
++
++# eliminar los elementos repetidos de ambas listas con conjuntos
++conjunto1 = set(lista1)
++conjunto2 = set(lista2)
++
++union = list(conjunto1 | conjunto2) #se unen los dos conjuntos
++solo1 = list(conjunto1 - conjunto2) # solo muestra el conjunto 1
++solo2 = list(conjunto2 - conjunto1) #solo muestra el conjunto 2
++interseccion = list(conjunto1 & conjunto2) # muestra ambas listas
++
++print(f"Lista de palabras que aparecen en las listas: {union}")
++
++print(f"Lista de palabras que aparecen en la primera lista, pero no en la segunda: {solo1}")
++
++print(f"Lista de palabras que aparecen en la segunda lista, pero no en la primera: {solo2}")
++
++print(f"Lista de palabras que aparecen en ambas listas: {interseccion}")
+Index: Ejercicio3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Ejercicio3.py b/Ejercicio3.py
+new file mode 100644
+--- /dev/null	(date 1729552978989)
++++ b/Ejercicio3.py	(date 1729552978989)
+@@ -0,0 +1,44 @@
++#Ejercicio 3: Agregar personajes a una lista
++#Escriba un programa donde cree una lista con los siguientes personajes del señor de los anillos
++
++#Nombre: Aragon
++# Clase: Guerrero
++# Raza: Dunadan del norte
++
++#Nombre: Gandalf
++#Clase: Mago
++#Raza: Istar
++
++#Nombre: Legolas
++#Clase: Arquero
++#Raza: Elfo Sindar
++
++personajes = [] #lista vacía
++
++# Creamos diccionarios:
++
++personaje = {'Nombre': 'Aragon', 'Clase': 'Guerrero', 'Raza': 'Dunadan'}
++personajes.append(personaje) # agrego el personaje a la lista
++
++personaje = {'Nombre': 'Gandalf', 'Clase': 'Mago', 'Raza': 'Istar'}
++personajes.append(personaje)
++
++personaje = {'Nombre': 'Legolas', 'Clase': 'Arquero', 'Raza': 'Elfo Sindar'}
++personajes.append(personaje)
++
++print(f"Personajes: {personajes}")
++
++# Tarea: agregar otros 3 personajes
++
++personajesDBZ = []
++
++personajeDBZ = {'Nombre': 'Freezer', 'Clase': 'Guerrero', 'Raza': 'Fríos'}
++personajesDBZ.append(personajeDBZ)
++
++personajeDBZ = {'Nombre': 'Cell', 'Clase': 'Guerrero', 'Raza': 'Androide'}
++personajesDBZ.append(personajeDBZ)
++
++personajeDBZ = {'Nombre': 'Majin Buu', 'Clase': 'Guerrero', 'Raza': 'Majin'}
++personajesDBZ.append(personajeDBZ)
++
++print(f"Personajes de DBZ: {personajesDBZ}")
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8b23f66c-7fb9-4519-acae-1594df19a471\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/Ejercicio1.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../Ejercicio1/.idea/Clase4.iml\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../../../..\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 7\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2maIyuXRHYvvBqgFH1LZ4UyNZl6\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Python.Ejercicio1.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"main\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8b23f66c-7fb9-4519-acae-1594df19a471\" name=\"Changes\" comment=\"\" />\r\n      <created>1727308519107</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1727308519107</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c1f3f889cdead6347fe93d72a923e3706d3c27ab)
++++ b/.idea/workspace.xml	(date 1731113697244)
+@@ -5,8 +5,14 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="8b23f66c-7fb9-4519-acae-1594df19a471" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/Ejercicio1.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Ejercicio1/.idea/Clase4.iml" beforeDir="false" />
++      <change afterPath="$PROJECT_DIR$/4.6-Ejercicio1-LlenarUnaLista.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/4.7-Ejercicio2-ModificarElementosDeLista.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Ejercicio2.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Ejercicio3.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/EjercicioRaizCuadrada.py" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/RecorrerDiccionario.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -23,21 +29,148 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 7
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 7
++}</component>
+   <component name="ProjectId" id="2maIyuXRHYvvBqgFH1LZ4UyNZl6" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Python.Ejercicio1.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "main"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Python.4.6-Ejercicio1-LlenarUnaLista.executor&quot;: &quot;Run&quot;,
++    &quot;Python.4.7-Ejercicio2-ModificarElementosDeLista.executor&quot;: &quot;Run&quot;,
++    &quot;Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Ejercicio1.executor&quot;: &quot;Run&quot;,
++    &quot;Python.Ejercicio3.executor&quot;: &quot;Run&quot;,
++    &quot;Python.EjercicioRaizCuadrada.executor&quot;: &quot;Run&quot;,
++    &quot;Python.RecorrerDiccionario.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;python&quot;
+   }
+-}]]></component>
++}</component>
++  <component name="RunManager" selected="Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos">
++    <configuration name="4.6-Ejercicio1-LlenarUnaLista" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="Clase4" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.6-Ejercicio1-LlenarUnaLista.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="4.7-Ejercicio2-ModificarElementosDeLista" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="Clase4" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.7-Ejercicio2-ModificarElementosDeLista.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="4.8-Ejercicio3-InsertarElementosYOrdenarlos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="Clase4" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.8-Ejercicio3-InsertarElementosYOrdenarlos.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="EjercicioRaizCuadrada" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="Clase4" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EjercicioRaizCuadrada.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <configuration name="RecorrerDiccionario" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="Clase4" />
++      <option name="ENV_FILES" value="" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RecorrerDiccionario.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Python.4.8-Ejercicio3-InsertarElementosYOrdenarlos" />
++        <item itemvalue="Python.4.7-Ejercicio2-ModificarElementosDeLista" />
++        <item itemvalue="Python.EjercicioRaizCuadrada" />
++        <item itemvalue="Python.4.6-Ejercicio1-LlenarUnaLista" />
++        <item itemvalue="Python.RecorrerDiccionario" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+@@ -56,4 +189,15 @@
+     </task>
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: EjercicioRaizCuadrada.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/EjercicioRaizCuadrada.py b/EjercicioRaizCuadrada.py
+new file mode 100644
+--- /dev/null	(date 1729555737189)
++++ b/EjercicioRaizCuadrada.py	(date 1729555737189)
+@@ -0,0 +1,9 @@
++import math
++#Ejercicio de matematica
++#Calcular la raíz cuadrada de un número positivo
++
++numero = int(input('Ingrese un numero positivo'))
++while numero < 0:
++    numero = int(input('Ingrese un numero positivo'))
++
++print(f"La raíz cuadrada de {numero} es: {math.sqrt(numero):.2f}")
+\ No newline at end of file
+Index: RecorrerDiccionario.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/RecorrerDiccionario.py b/RecorrerDiccionario.py
+new file mode 100644
+--- /dev/null	(date 1729554755884)
++++ b/RecorrerDiccionario.py	(date 1729554755884)
+@@ -0,0 +1,13 @@
++#Diccionario de datos de la selección Argentina:
++
++seleccionArgentina = {
++    10: {'Nombre': 'Lionel Messi', 'Edad': 35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posición': 'Extremo Derecho'},
++    11: {'Nombre': 'Angel Di Maria', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posición': 'Extremo Derecho'},
++    21: {'Nombre': 'Paulo Dybala', 'Edad': 28, 'Altura': 1.77, 'Precio': '35 Millones', 'Posición': 'Media Punta'},
++    19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posición': 'Defensa Central'},
++    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posición': 'Portero'}
++}
++
++# Como recorrer el diccionario con el ciclo for
++for i in seleccionArgentina:
++    print(f'{i} -> {seleccionArgentina[i]}')
+\ No newline at end of file
+Index: 4.6-Ejercicio1-LlenarUnaLista.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/4.6-Ejercicio1-LlenarUnaLista.py b/4.6-Ejercicio1-LlenarUnaLista.py
+new file mode 100644
+--- /dev/null	(date 1729555722792)
++++ b/4.6-Ejercicio1-LlenarUnaLista.py	(date 1729555722792)
+@@ -0,0 +1,21 @@
++#Ejercicio 1: llenar una lista
++#Llenar una lista con los números del 1 al 50, luego mostrar
++# la lista con el bucle for, los elementos deben mostrarse de la siguiente forma:
++# 1-2-3-4-5...-50
++
++#numeros = []
++#i = 1
++
++#while i <= 50:
++ #   numeros.append(i)
++  #  i += 1
++
++#for i in numeros:
++ #   print(i, end='-')
++
++
++# misma funcionalidad pero en menos lineas:
++
++numeros = list(range(1,51))
++for i in numeros:
++   print(i, end='-')
